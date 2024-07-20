@@ -47,6 +47,7 @@
 .f2{
     display: flex;
     flex: 1;
+    transition: 1s;
 }
 .name{
     font-weight: bolder;
@@ -71,7 +72,7 @@
     margin-bottom: 0%;
     margin-left: 5px;
     margin-right: 10px ;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 
@@ -209,8 +210,8 @@ h1{
 
 .mypic{
     display: flex;
-    height: 85%;
-    width: 38%;
+    height: 100%;
+    width: 40%;
     
     position: absolute;
     transform: translateY(48px);
@@ -221,26 +222,28 @@ h1{
 }
 .mypic img{
 
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s ;
+    overflow: hidden;
 }
 .bgpic{
-    width:100%;
+    width: 150px;
     justify-items: center;
     align-items: center;
     bottom: 200px;
-    
+    overflow: hidden;
 }
 .mypic:hover .bgpic{
     bottom: 250px;
 }
 .profilep{
-    height: 80%;
-    width: 40%;
+    height: 200px;
+    width: 100px;
     bottom: 0px;
     border-radius: 25%;
+    overflow: hidden;
     
 }
 .mypic:hover .profilep{
