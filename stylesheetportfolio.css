@@ -1,0 +1,560 @@
+.bg{
+    background-image: url(backgroundpic.jpg.webp);
+}
+.navigationtoolbar{
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(0, 0, 0, 0.7) ;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+.logobox{
+    height: 100%;
+    width: 25%;
+    
+    display:flex;
+    flex: 1;
+
+
+}
+.logo{
+    
+    width: 150px;
+    padding: 2px;
+
+}
+.buttonsl{
+    height: 100%;
+
+    display: flex;
+    width: 75%;
+    flex: 1;
+    vertical-align: baseline;
+    
+}
+.ind{
+    display: flex;
+    flex: 1;
+
+}
+.f2{
+    display: flex;
+    flex: 1;
+}
+.name{
+    font-weight: bolder;
+    font-size: 35px;
+    background-image: linear-gradient(430deg,rgb(131, 42, 131) 4%,rgb(247, 118, 240) 46%,rgb(231, 199, 17) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.introduction{
+    font-size: 20px;
+}
+ a{
+    height: fit-content;
+    font-weight: bolder;
+    color: rgba(243, 243, 243, 0.651);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    margin-left: 5px;
+    margin-right: 10px ;
+    transition: 0.5s;
+}
+
+
+.f2 a:hover{
+    color: white;
+    border-bottom: 4px solid yellow;
+    
+}
+
+
+
+
+
+
+
+
+
+h1{
+    padding: 0%;
+    margin: 0px;
+}
+.section1{
+    
+    height: 575px;
+    display: flex;
+    flex-direction: row;
+    
+    overflow: hidden;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+}
+.myinfo{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    height: 40%;
+    width: 90%;
+    
+    justify-content: center;
+    bottom: -10px;
+    margin: 20px;
+    margin-top: 100px;
+    flex: 2;
+}
+.myinfo p{
+    color: whitesmoke;
+}
+
+.down{
+    border: none;
+    outline: none;
+    margin: 15px;
+    padding: 8px;
+    font-weight: bolder;
+    font-family: "poolen",sans-serif;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 4px;
+}
+.down::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+}
+.down::before{
+    content: "";
+    background: linear-gradient(45deg,#ff0000, #ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#ff00c8,#ff0000);
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 9px);
+    height: calc(100% + 7px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 4px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0%{background-position: 0 0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+
+}
+.down:hover::before{
+    opacity: 1;
+}
+.down:active::after{
+    background: transparent;
+}
+.down:active{
+    color: #000;
+    font-weight: bold;
+}
+.icons{
+    height: 30px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;   
+    margin-left: 70px; 
+    
+}
+.linked{
+    font-size: 30px;
+    color: #002bff;
+    transition: 1s;
+    margin-left: 3px;
+}
+.linked:hover{
+    color: whitesmoke;
+    border-bottom: #fffb00;
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+.mypic{
+    display: flex;
+    height: 85%;
+    width: 38%;
+    
+    position: absolute;
+    transform: translateY(48px);
+    right: 5px;
+    margin:10px;
+    overflow: hidden;
+
+}
+.mypic img{
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s ;
+}
+.bgpic{
+    width:100%;
+    justify-items: center;
+    align-items: center;
+    bottom: 200px;
+    
+}
+.mypic:hover .bgpic{
+    bottom: 250px;
+}
+.profilep{
+    height: 80%;
+    width: 40%;
+    bottom: 0px;
+    border-radius: 25%;
+    
+}
+.mypic:hover .profilep{
+    left: 53%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section2{
+    
+    height: 575px;
+    margin: 0%;
+    vertical-align: middle;
+    align-items: center;
+
+}
+
+.qualification, .skills{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    border-color: #ff0000;
+    border-width: 10px;
+    height: 60%;
+    width: 98%;
+    margin: 10px;
+    
+    padding: 5px;
+   vertical-align: top;
+   justify-content: center;
+   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+   -6px -6px 10px -1px rgba(0, 0, 0, 0.7) ;
+    transition: 1s;
+}
+.skills{
+    height: 30%;
+}
+.title{
+    background-image: linear-gradient(430deg,rgb(131, 42, 131) 4%,rgb(247, 118, 240) 46%,rgb(231, 199, 17) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.qualification li, .skills li{
+    margin-top: 70px;
+    margin-left: 0px;
+    border-width: 25px;
+    color: white;
+    font-size: large;
+    
+}
+.qualification::marker,.skills::marker{
+ color:yellow
+}
+.qualification:hover,.skills:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(225,225,225,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.skill{
+    width: 160px;
+    height: 160px;
+   display: inline-block;
+    position: relative;
+    margin-top: 2px;
+    margin-left:175px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 0px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(0, 0, 0, 0.7) ;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(225,225,225,0.7), -0.5px -0.5px 0px rgba(255,255,255,1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.number{
+    font-size: larger;
+    font-weight: 100px;
+    color:orangered;
+}
+.c{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim 2s linear forwards;
+
+}
+.c1{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim1 2s linear forwards;
+
+}
+.c2{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 435;
+    stroke-dashoffset: 435;
+    animation: anim2 2s linear forwards;
+
+}
+svg{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+@keyframes anim{
+    100%{stroke-dashoffset: 165 ;}
+}
+@keyframes anim1{
+    100%{stroke-dashoffset: 35 ;}
+}
+@keyframes anim2{
+    100%{stroke-dashoffset: 113 ;}
+}
+.t{
+    display:flex ;
+    color: white;
+    
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+.progressbox{
+    display: flex;
+    
+    background: black;
+    height: 225px;
+    width: 100%;
+    padding: 2px;
+
+}
+.skill p{
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 1px;
+    padding-top: 1px;
+    align-items: center;
+    color: white;
+}
+.sklist{display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background: black;
+    height: px;
+    width: 100%;
+    padding: 2px;}
+.sklist li{
+    color: rgb(250, 146, 163);
+    padding-left: 40px;
+}
+
+
+
+
+
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    
+    height: 575px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.contain{
+    margin-top: 20px;
+    display: flex;
+    height: 75%;
+    
+}
+.card{
+    align-items: center;
+    justify-content: center;
+    width:300px ;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    transition: 1s;
+}
+.cerimg{
+    width: 300px;
+    border-radius: 3px;
+    height: 200px;
+    transition: 1s;
+}
+.abo{
+    height: 90px;
+    width: 300px;
+    padding: 3px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27,0.5);
+    box-shadow: 5px 5px 20px black;
+    color: white;
+    transition: 1s;
+    
+}
+.contain h3{
+    margin:10px;
+    font-size:  30px;
+
+}
+.contain p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 1s;
+
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .abo{
+    height: 200px;
+    
+    background: rgb(27, 27,27,0.5);
+}
+.card:hover p{
+    visibility: visible;
+}
+.card:hover .cerimg{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.section4 .abo{
+    height: 140px;
+}
+.section4 .card:hover.abo{}
+.section4 .contain ,.section4 .cerimg ,.section4 .card ,.section4 .abo{
+    border-radius: 20%;
+}
+.section5{
+    display: flex;
+    flex-direction: column;
+    background-image: url(bgcon.jpg);
+    background-size: cover;
+    height: 575px;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.section1,.section2,.section3,.section5{
+    height: 600px;
+}
+.contactinfo{
+    margin-left: 30px;
+}
+.contactinfo span{
+    font-weight: bold;
+}
+.contactinfo p{
+    color: white;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+}
+.insta{
+    font-size: 30px;
+    color: #db259f;
+}
+.section1,.section2,.section3,.section5,.section4{
+    
+    
+}
