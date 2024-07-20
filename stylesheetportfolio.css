@@ -1,4 +1,6 @@
 .bg{
+    height:100%;
+    width:100%;
     background-image: url(backgroundpic.jpg.webp);
 }
 .navigationtoolbar{
@@ -554,6 +556,6 @@ svg{
     color: #db259f;
 }
 .section1,.section2,.section3,.section5,.section4{
-    
+    width:100%;
     
 }
